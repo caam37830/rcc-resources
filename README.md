@@ -178,6 +178,6 @@ scp -r <CNetID>@midway2.rcc.uchicago.edu:<path you want to store the directory> 
 
 Alternatively you can download and install [Cyberduck](https://cyberduck.io/download/). Cyberduck works for both Windows and MacOS. 
 
-<img src="https://www.dropbox.com/s/c03sbfkz5ylqfkt/screen%20shot%202020-11-02%20at%2010.59.52%20am.png?dl=1" width="600"/>
+<img src="https://www.dropbox.com/s/c03sbfkz5ylqfkt/screen%20shot%202020-11-02%20at%2010.59.52%20am.png?raw=1" width="400"/>
 
 Here are all the necessary information you need to interact with the Uchicago RCC. For specific questions, please check out the [RCC Website](https://rcc.uchicago.edu/docs/connecting/index.html) and contact with the teaching team.
