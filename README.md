@@ -1,6 +1,6 @@
 # Uchicago Midway RCC Tutorial
 
-This is a tutorial for using Uchicago Midway research computing center (RCC). 
+This is a tutorial for using Uchicago Midway research computing center (RCC).
 
 *This tutorial was adapted from [RCC Website](https://rcc.uchicago.edu/docs/connecting/index.html). I will keep it short to provide you necessary information to interact with the computing cluster and run jobs on it. I highly recommend you to check out the website for detailed questions.*
 
@@ -56,11 +56,30 @@ To exit ThinLinc and terminate your session completely, simply exit or close the
 
 ## Running Jobs on Midway
 
+### Python on Midway
+
+Midway uses modules to load different functionality.  You can see all options using
+```
+module avail
+```
+
+You need to load the python module.  You can do this using
+```
+module load python
+```
+
+This make `python` available to you and your scripts.  RCC uses Anaconda python, so you can create a conda environment and easily install packages.
+```
+conda create -n pycourse
+conda activate pycourse
+(pycourse) conda install ...
+```
+
 ### Checking Your Account Balance
 
 Firstly, when you connect to the cluster, you are in one of its login nodes. Login nodes may be used for compiling and debugging code, installing software, editing and managing files, submitting jobs, or any other work that is not long-running or computationally intensive. Login nodes should not be used for computionally intensive work. If you find your process is terminated and restarted, be sure to use compute node following the instructions below.
 
-In Midway RCC, all jobs running on the compute nodes consume Service Units (SUs). All consumptions of SUs will be recorded and the amount of the SUs used will be deducted from the account balance. If you have multiple accounts, make sure the account for our course is **caam37830**. 
+In Midway RCC, all jobs running on the compute nodes consume Service Units (SUs). All consumptions of SUs will be recorded and the amount of the SUs used will be deducted from the account balance. If you have multiple accounts, make sure the account for our course is **caam37830**.  If you are also under a PI account, you can change your default account by following the instructions in this [RCC link](https://rcc.uchicago.edu/docs/faq/index.html#i-am-a-member-of-multiple-accounts-how-do-i-choose-which-allocation-is-charged).
 
 You can check the account balance by type in the command line
 
@@ -145,7 +164,7 @@ The Slurm job scheduler provides several command-line tools for checking on the 
 * **sacct**: retrieves job history and statistics about past jobs.
 * **scancel**: cancels jobs you have submitted.
 
-For example you can check the status of your job by using 
+For example you can check the status of your job by using
 
 ```
 squeue --user=<CNetID>
@@ -185,7 +204,7 @@ scp -r <CNetID>@midway2.rcc.uchicago.edu:<path you want to store the directory> 
 
 ### Cyberduck
 
-Alternatively you can download and install [Cyberduck](https://cyberduck.io/download/). Cyberduck works for both Windows and MacOS. 
+Alternatively you can download and install [Cyberduck](https://cyberduck.io/download/). Cyberduck works for both Windows and MacOS.
 
 Once open the software, click the "Open Connection" button at the upper left of the interface. Then switch the file transfer protocol to "SSH File Transfer Protocol". Still the server name is `midwya2.rcc.uchicago.edu`. The user name is your CNetId and the password is your password. Here is an example of the setup of Cyberduck,
 
