@@ -118,6 +118,15 @@ Finally suppose the sbatch script is saved in the current directory into a file 
 sbatch example.sbatch
 ```
 
+For an example, you can put [`example.sbatch`](example.sbatch) and [`script.py`](script.py) into the same directory (either use git clone or upload the files manually) on your Midway cluster. Then run
+
+
+```
+sbatch example.sbatch
+```
+
+to test submitting a job.
+
 #### Interactive Jobs
 
 The `sinteractive` command is used for requesting an interactive session. The sinteractive will direct you to the compute node, set up X11 forwarding, and transfer your current shell environment, including all the modules have previously loaded. To use it, type in the command line
