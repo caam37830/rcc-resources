@@ -156,7 +156,9 @@ scancel --user=<CNetID>
 
 ## Data Transfer
 
-RCC provides a number of methods for accessing and transferring data in/out of the systems. Here I will only introduce the command-line approach. For the more methods for different systems, please refer to [page](https://rcc.uchicago.edu/docs/data-transfer/index.html#http-web-access).
+RCC provides a number of methods for accessing and transferring data in/out of the systems. Here I will only introduce the command-line approach and Cyberduck. For the more methods for different systems, please refer to [page](https://rcc.uchicago.edu/docs/data-transfer/index.html#http-web-access).
+
+### SCP
 
 Most UNIX-like operating systems (Mac OS X, Linux, etc) provide a scp command which can be accessed from the command line. To transfer files from your local computer to your home directory on Midway2, open a terminal window and issue the command:
 
@@ -171,5 +173,12 @@ To download the files or directories to your local machine, use the following:
 scp <CNetID>@midway2.rcc.uchicago.edu:<path you want to store the file> <path to the local file>
 scp -r <CNetID>@midway2.rcc.uchicago.edu:<path you want to store the directory> <path to local dir>
 ```
+
+### Cyberduck
+
+Alternatively you can download and install [Cyberduck](https://cyberduck.io/download/). Cyberduck works for both Windows and MacOS. 
+
+<img src="https://uchicagoedu-my.sharepoint.com/:i:/g/personal/yianc_uchicago_edu/EYapP9vks11OjpX8110pjQABLiYiMb5Je8os6U4gsVuFng?e=XDR6tH" width="600"/>
+
 
 Here are all the necessary information you need to interact with the Uchicago RCC. For specific questions, please check out the [RCC Website](https://rcc.uchicago.edu/docs/connecting/index.html) and contact with the teaching team.
