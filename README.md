@@ -178,6 +178,10 @@ scp -r <CNetID>@midway2.rcc.uchicago.edu:<path you want to store the directory> 
 
 Alternatively you can download and install [Cyberduck](https://cyberduck.io/download/). Cyberduck works for both Windows and MacOS. 
 
+Once open the software, click the "Open Connection" button at the upper left of the interface. Then switch the file transfer protocol to "SSH File Transfer Protocol". Still the server name is `midwya2.rcc.uchicago.edu`. The user name is your CNetId and the password is your password. Here is an example of the setup of Cyberduck,
+
 <img src="https://www.dropbox.com/s/c03sbfkz5ylqfkt/screen%20shot%202020-11-02%20at%2010.59.52%20am.png?raw=1" width="400"/>
+
+Click "Connect". Now you can directly manage and transfer the files using the interface provided by Cyberduck.
 
 Here are all the necessary information you need to interact with the Uchicago RCC. For specific questions, please check out the [RCC Website](https://rcc.uchicago.edu/docs/connecting/index.html) and contact with the teaching team.
